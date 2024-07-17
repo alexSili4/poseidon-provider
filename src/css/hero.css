@@ -1,0 +1,116 @@
+.hero-section {
+  padding-top: 104px;
+  padding-bottom: 16px;
+  background-color: #f4f6f9;
+}
+
+.hero-title {
+  color: #2f3037;
+  font-family: Geologica;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.hero-title-accent {
+  color: #4289fe;
+}
+
+.hero-desc {
+  margin-top: 20px;
+  color: #7e8494;
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.hero-info-statistics {
+  height: 170px;
+  border-radius: 16px;
+  background-color: var(--white-color);
+  background-image: url('/images/hero/statistics-01.jpg'), url('/images/hero/statistics-02.jpg');
+  background-size: 760px 114px, 411px 146px;
+  background-position: top 20px left 21px, top 146px left 18px;
+  background-repeat: no-repeat;
+}
+
+.hero-info-desc-wrap {
+  height: 141px;
+  border-radius: 16px;
+  background-image: url('/icons/hero/fire-mobile.svg'), url('/images/hero/card-barcode.png'), url('/images/hero/card-90-off.png'), linear-gradient(236.31deg, #366fff -40.816%, #59bcfb 174%);
+  padding: 18px 24px;
+  background-size: 45px 45px, 124px 151px, 132px 155px, 100% 100%;
+  background-position: top 89px left 182px, top 49px left 183px, top -3px left 243px, 0 0;
+  background-repeat: no-repeat;
+}
+
+.hero-info-desc {
+  width: 184px;
+  color: var(--white-color);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-top: 142px;
+    padding-bottom: 22px;
+  }
+
+  .hero-title {
+    width: 1168px;
+    font-size: 56px;
+    font-weight: 400;
+  }
+
+  .hero-desc {
+    width: 705px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+
+  .hero-info-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    margin-top: 84px;
+  }
+
+  .hero-info-statistics {
+    width: 793px;
+    height: 360px;
+    border-radius: 20px;
+    background-image: url('/images/hero/statistics-01.jpg'), url('/images/hero/statistics-02.jpg'), url('/images/hero/statistics-03.jpg');
+    background-size: 895px 132px, 518px 172px, 281px 324px;
+    background-position: top 50px left 44px, top 198px left 44px, top 198px left 578px;
+  }
+
+  .hero-info-desc-wrap {
+    width: 387px;
+    height: auto;
+    border-radius: 20px;
+    background-image: url('/icons/hero/fire-desk.svg'), url('/images/hero/card-barcode.png'), url('/images/hero/card-90-off.png'), linear-gradient(236.31deg, #366fff -56.484%, #59bcfb 138.781%);
+    padding: 18px 24px;
+    background-size: 63px 63px, 253px 310px, 271px 319px, 100% 100%;
+    background-position: top 127px left 309px, top 151px left 2px, top 80px left 153px, 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .hero-info-desc {
+    width: 256px;
+  }
+}
