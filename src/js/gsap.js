@@ -19,7 +19,7 @@ if (isDesk) {
     animation: tl,
     trigger: '.about-content-wrap',
     start: 'center center',
-    end: 2000,
+    end: 'bottom',
     scrub: true,
     pin: true,
   });
