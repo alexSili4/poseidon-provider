@@ -45,13 +45,41 @@
 }
 
 .hero-info-desc-wrap {
+  position: relative;
   height: 141px;
   border-radius: 16px;
-  background-image: url('/icons/hero/fire-mobile.svg'), url('/images/hero/card-barcode.png'), url('/images/hero/card-90-off.png'), linear-gradient(236.31deg, #366fff -40.816%, #59bcfb 174%);
+  background-image: linear-gradient(236.31deg, #366fff -40.816%, #59bcfb 174%);
   padding: 18px 24px;
-  background-size: 45px 45px, 124px 151px, 132px 155px, 100% 100%;
-  background-position: top 89px left 182px, top 49px left 183px, top -3px left 243px, 0 0;
+  background-size: 100% 100%;
+  background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.hero-info-desc-bg-fire-mobile-icon {
+  position: absolute;
+  top: 89px;
+  left: 182px;
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+.hero-info-desc-bg-card-barcode-img {
+  position: absolute;
+  top: 49px;
+  left: 183px;
+  display: block;
+  width: 124px;
+  height: 151px;
+}
+
+.hero-info-desc-bg-card-90-off-img {
+  position: absolute;
+  top: -3px;
+  left: 243px;
+  display: block;
+  width: 132px;
+  height: 155px;
 }
 
 .hero-info-desc {
@@ -103,14 +131,46 @@
     width: 387px;
     height: auto;
     border-radius: 20px;
-    background-image: url('/icons/hero/fire-desk.svg'), url('/images/hero/card-barcode.png'), url('/images/hero/card-90-off.png'), linear-gradient(236.31deg, #366fff -56.484%, #59bcfb 138.781%);
+    background-image: linear-gradient(236.31deg, #366fff -56.484%, #59bcfb 138.781%);
     padding: 18px 24px;
-    background-size: 63px 63px, 253px 310px, 271px 319px, 100% 100%;
-    background-position: top 127px left 309px, top 151px left 2px, top 80px left 153px, 0 0;
+    background-size: 100% 100%;
+    background-position: 0 0;
     background-repeat: no-repeat;
+  }
+
+  .hero-info-desc-bg-fire-mobile-icon {
+    display: none;
+  }
+
+  .hero-info-desc-bg-fire-desk-icon {
+    position: absolute;
+    top: 127px;
+    left: 309px;
+    width: 63px;
+    height: 63px;
+  }
+
+  .hero-info-desc-bg-card-barcode-img {
+    top: 151px;
+    left: 2px;
+    width: 253px;
+    height: 310px;
+  }
+
+  .hero-info-desc-bg-card-90-off-img {
+    top: 80px;
+    left: 153px;
+    width: 271px;
+    height: 319px;
   }
 
   .hero-info-desc {
     width: 256px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .hero-info-desc-bg-fire-desk-icon {
+    display: none;
   }
 }

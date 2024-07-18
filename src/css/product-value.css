@@ -76,10 +76,13 @@
   margin-left: 80px;
 }
 
-.product-value-card-progress-icon-wrap {
+.product-value-card-progress-icon-container {
   position: absolute;
   top: 22px;
   left: 3px;
+}
+
+.product-value-card-progress-icon-wrap {
   width: 79px;
   height: 79px;
   border: 0.44px solid #e3eef9;
@@ -204,10 +207,13 @@
   transform: translateY(0%);
 }
 
-.product-value-card-present-icon-wrap {
+.product-value-card-present-icon-container {
   position: absolute;
   top: 80px;
   left: 5px;
+}
+
+.product-value-card-present-icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,7 +232,6 @@
 }
 
 .product-value-card-graph-icon-wrap {
-  position: relative;
   margin-left: 16px;
   transform: rotate(-6.6deg);
 }
@@ -252,10 +257,13 @@
   animation: marker-move 2s linear forwards;
 }
 
-.product-value-card-box-icon-wrap {
+.product-value-card-box-icon-container {
   position: absolute;
-  top: 25px;
-  left: 209px;
+  top: 83px;
+  left: 240px;
+}
+
+.product-value-card-box-icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,8 +320,11 @@
     margin-left: 91px;
   }
 
-  .product-value-card-progress-icon-wrap {
+  .product-value-card-progress-icon-container {
     top: 40px;
+  }
+
+  .product-value-card-progress-icon-wrap {
     width: 90px;
     height: 90px;
     border: 0.5px solid #e3eef9;
@@ -355,9 +366,12 @@
     font-size: 14px;
   }
 
-  .product-value-card-present-icon-wrap {
+  .product-value-card-present-icon-container {
     top: 70px;
     left: -15px;
+  }
+
+  .product-value-card-present-icon-wrap {
     width: 72px;
     height: 72px;
   }
