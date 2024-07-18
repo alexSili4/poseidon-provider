@@ -1,11 +1,13 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import getIsDesk from './getIsDesk';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const isDesk = getIsDesk();
 const tl = gsap.timeline();
 
-if (window.innerWidth >= 1440) {
+if (isDesk) {
   tl.fromTo('.about-slider-bg', { x: '0%' }, { x: '610px', duration: 1 }, 0);
   tl.fromTo('.about-text-wrap', { x: '0%' }, { x: '-590px', duration: 1 }, 0);
   tl.fromTo('.about-slider-wrap', { opacity: 1 }, { opacity: 0, duration: 1 }, 0);
