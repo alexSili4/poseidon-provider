@@ -4,6 +4,7 @@
 }
 
 .about-content-wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid #e3eef9;
@@ -142,6 +143,7 @@
     top: 56px;
     left: 102px;
     width: 404px;
+    opacity: 1;
   }
 
   .about-title {
