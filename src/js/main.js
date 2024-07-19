@@ -1,3 +1,4 @@
+import '@lottiefiles/lottie-player';
 import '/js/swiper';
 import '/js/gsap';
 import '/js/scrollToTargetSection';
