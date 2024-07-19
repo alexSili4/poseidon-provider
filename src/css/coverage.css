@@ -19,7 +19,7 @@
   max-width: 660px;
   height: 660px;
   transform: translateX(-50%);
-  animation: rotate 60s infinite linear;
+  animation: rotate 180s infinite linear;
 }
 
 .coverage-map-bg {

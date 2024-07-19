@@ -4,19 +4,14 @@ import 'swiper/css';
 import getAboutSliderSectionTitle from './getAboutSliderSectionTitle';
 
 const reviewsSlider = new Swiper('.js-reviews-slider', {
-  modules: [Navigation, Autoplay],
+  modules: [Navigation],
   direction: 'horizontal',
   centeredSlides: true,
   loop: true,
   spaceBetween: 8,
   slidesPerView: 1.095,
-  speed: 3000,
+  speed: 800,
   grabCursor: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-    waitForTransition: true,
-  },
   breakpoints: {
     1440: {
       spaceBetween: 32,

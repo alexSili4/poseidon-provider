@@ -251,6 +251,7 @@
   border-radius: 50%;
   border: 3px solid var(--white-color);
   background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -58.506%, rgb(89, 188, 251) 134.237%);
+  animation: marker-move-reverse 2s linear forwards;
 }
 
 .product-value-card.result:is(:hover, :focus) .product-value-card-graph-marker {
@@ -390,6 +391,20 @@
   }
   100% {
     transform: translateX(34px) translateY(-24px);
+  }
+}
+
+@keyframes marker-move-reverse {
+  0% {
+    transform: translateX(34px) translateY(-24px);
+  }
+
+  50% {
+    transform: translateX(16px) translateY(-14px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
   }
 }
 
