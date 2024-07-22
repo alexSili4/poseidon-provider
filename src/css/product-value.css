@@ -26,19 +26,8 @@
   border-radius: 20px;
   background-color: #f4f6f9;
   padding: 32px 24px;
+  padding-top: 232px;
   overflow: hidden;
-}
-
-.product-value-card.traffic {
-  padding-top: 63px;
-}
-
-.product-value-card.benefits {
-  padding-top: 40px;
-}
-
-.product-value-card.result {
-  padding-top: 67px;
 }
 
 .product-value-circles-bg {
@@ -65,59 +54,45 @@
   left: -152px;
 }
 
-.product-value-card-icons-wrap {
+.product-value-card-graph-animation-wrap {
+  position: absolute;
+  left: 40px;
+  top: 67px;
+}
+
+.product-value-card-graph-animation {
   position: relative;
-}
-
-.product-value-card-traffic-icon {
   display: block;
-  width: 208px;
-  height: 126px;
-  margin-left: 80px;
+  width: 211px;
+  height: 117px;
+  transform: rotate(-6.6deg);
 }
 
-.product-value-card-progress-icon-container {
+.product-value-card-box-icon-container {
   position: absolute;
-  top: 22px;
-  left: 3px;
+  top: 92px;
+  left: 249px;
 }
 
-.product-value-card-progress-icon-wrap {
-  width: 79px;
-  height: 79px;
-  border: 0.44px solid #e3eef9;
-  border-radius: 17.62px;
-  backdrop-filter: blur(3.52px);
-  background-color: var(--white-color);
-  transform: rotate(-19.93deg);
+.product-value-card-box-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  backdrop-filter: blur(5.44px);
+  background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -58.506%, rgb(89, 188, 251) 134.237%);
+  transform: rotate(17.26deg);
 }
 
-.product-value-card-progress-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 52px;
-  height: 40px;
-  transition: opacity var(--transition-duration-and-func);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.product-value-card-progress-icon.end {
-  opacity: 0;
-}
-
-.product-value-card.traffic:is(:hover, :focus) .product-value-card-progress-icon.start {
-  opacity: 0;
-}
-
-.product-value-card.traffic:is(:hover, :focus) .product-value-card-progress-icon.end {
-  opacity: 1;
+.product-value-card-box-icon {
+  width: 28px;
+  height: 28px;
 }
 
 .product-value-card-benefits-list-wrap {
   position: relative;
-  margin-top: 32px;
 }
 
 .product-value-card-benefits-list-title {
@@ -155,7 +130,40 @@
   border-radius: 50%;
 }
 
+.product-value-card-progress-animation-wrap {
+  position: absolute;
+  top: 85px;
+  left: 27px;
+}
+
+.product-value-card-progress-animation {
+  position: relative;
+  display: block;
+  width: 79px;
+  height: 79px;
+  transform: rotate(-19.93deg);
+}
+
+.product-value-card-traffic-icon-wrap {
+  position: absolute;
+  top: 63px;
+  left: 104px;
+}
+
+.product-value-card-traffic-icon {
+  display: block;
+  width: 208px;
+  height: 126px;
+}
+
+.product-value-card-target-audience-img-container {
+  position: absolute;
+  top: 37px;
+  left: 59px;
+}
+
 .product-value-card-target-audience-img-wrap {
+  position: relative;
   transform: rotate(4.24deg);
 }
 
@@ -163,13 +171,12 @@
   display: block;
   width: 258px;
   height: 123px;
-  margin-left: 37px;
 }
 
 .product-value-card-target-audience-text-container {
   position: absolute;
   top: 54px;
-  left: 218px;
+  left: 180px;
   width: 46px;
   height: 46px;
   overflow: hidden;
@@ -187,14 +194,6 @@
   transition: transform var(--transition-duration-and-func);
 }
 
-.product-value-card-percent-text {
-  color: var(--white-color);
-  font-family: Geologica;
-  font-size: 13.44px;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
 .product-value-card-target-audience-text-wrap.end {
   transform: translateY(-100%);
 }
@@ -207,10 +206,18 @@
   transform: translateY(0%);
 }
 
+.product-value-card-percent-text {
+  color: var(--white-color);
+  font-family: Geologica;
+  font-size: 13.44px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .product-value-card-present-icon-container {
   position: absolute;
-  top: 80px;
-  left: 5px;
+  top: 120px;
+  left: 29px;
 }
 
 .product-value-card-present-icon-wrap {
@@ -227,56 +234,6 @@
 }
 
 .product-value-card-present-icon {
-  width: 28px;
-  height: 28px;
-}
-
-.product-value-card-graph-icon-wrap {
-  margin-left: 16px;
-  transform: rotate(-6.6deg);
-}
-
-.product-value-card-graph-icon {
-  display: block;
-  width: 211px;
-  height: 117px;
-}
-
-.product-value-card-graph-marker {
-  position: absolute;
-  top: 69px;
-  left: 111px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 3px solid var(--white-color);
-  background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -58.506%, rgb(89, 188, 251) 134.237%);
-  animation: marker-move-reverse 2s linear forwards;
-}
-
-.product-value-card.result:is(:hover, :focus) .product-value-card-graph-marker {
-  animation: marker-move 2s linear forwards;
-}
-
-.product-value-card-box-icon-container {
-  position: absolute;
-  top: 83px;
-  left: 240px;
-}
-
-.product-value-card-box-icon-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  border-radius: 20px;
-  backdrop-filter: blur(5.44px);
-  background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -58.506%, rgb(89, 188, 251) 134.237%);
-  transform: rotate(17.26deg);
-}
-
-.product-value-card-box-icon {
   width: 28px;
   height: 28px;
 }
@@ -303,43 +260,7 @@
     width: 387px;
     height: 100%;
     padding: 48px 40px;
-  }
-
-  .product-value-card.traffic {
-    padding-top: 59px;
-  }
-
-  .product-value-card.benefits {
-    padding-top: 40px;
-  }
-
-  .product-value-card.result {
-    padding-top: 67px;
-  }
-
-  .product-value-card-traffic-icon {
-    margin-left: 91px;
-  }
-
-  .product-value-card-progress-icon-container {
-    top: 40px;
-  }
-
-  .product-value-card-progress-icon-wrap {
-    width: 90px;
-    height: 90px;
-    border: 0.5px solid #e3eef9;
-    border-radius: 20px;
-    backdrop-filter: blur(4px);
-  }
-
-  .product-value-card-progress-icon {
-    width: 59px;
-    height: 45px;
-  }
-
-  .product-value-card-benefits-list-wrap {
-    margin-top: 68px;
+    padding-top: 253px;
   }
 
   .product-value-card-benefits-item-text {
@@ -349,16 +270,36 @@
     font-size: 16px;
   }
 
+  .product-value-card-progress-animation-wrap {
+    position: absolute;
+    top: 97px;
+    left: 40px;
+  }
+
+  .product-value-card-progress-animation {
+    width: 90px;
+    height: 90px;
+  }
+
+  .product-value-card-traffic-icon-wrap {
+    top: 59px;
+    left: 131px;
+  }
+
+  .product-value-card-target-audience-img-container {
+    top: 59px;
+    left: 89px;
+  }
+
   .product-value-card-target-audience-img {
     display: block;
     width: 269px;
     height: 128px;
-    margin-left: 45px;
   }
 
   .product-value-card-target-audience-text-container {
     top: 56px;
-    left: 232px;
+    left: 188px;
     width: 48px;
     height: 48px;
   }
@@ -367,52 +308,8 @@
     font-size: 14px;
   }
 
-  .product-value-card-present-icon-container {
-    top: 70px;
-    left: -15px;
-  }
-
   .product-value-card-present-icon-wrap {
     width: 72px;
     height: 72px;
-  }
-
-  .product-value-card-graph-icon-wrap {
-    margin-left: 0px;
-  }
-}
-
-@keyframes marker-move {
-  0% {
-    transform: translateX(0px) translateY(0px);
-  }
-  50% {
-    transform: translateX(16px) translateY(-14px);
-  }
-  100% {
-    transform: translateX(34px) translateY(-24px);
-  }
-}
-
-@keyframes marker-move-reverse {
-  0% {
-    transform: translateX(34px) translateY(-24px);
-  }
-
-  50% {
-    transform: translateX(16px) translateY(-14px);
-  }
-
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-}
-
-@keyframes card-bg-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
