@@ -30,9 +30,8 @@
 
 .about-slider-how-it-works-wrap.interaction-scheme {
   position: absolute;
-  top: 24px;
+  bottom: 24px;
   left: 24px;
-  opacity: 0;
 }
 
 .about-title {
@@ -143,7 +142,6 @@
     top: 56px;
     left: 102px;
     width: 404px;
-    opacity: 1;
   }
 
   .about-title {
@@ -159,8 +157,12 @@
     padding-left: 0;
   }
 
+  .about-slider-pagination-item.interaction-scheme {
+    flex-direction: row;
+  }
+
   .about-slider-how-it-works-wrap.interaction-scheme .about-slider-pagination-item {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .about-slider-pagination-item.swiper-pagination-bullet-active .about-slider-pagination-item-number {
