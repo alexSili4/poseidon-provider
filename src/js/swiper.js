@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay, EffectFade, FreeMode } from 'swiper/modules';
+import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import getAboutSliderSectionTitle from './getAboutSliderSectionTitle';
+import getAboutSliderAdditionalClassName from './getAboutSliderAdditionalClassName';
 
 const reviewsSlider = new Swiper('.js-reviews-slider', {
   modules: [Navigation],
@@ -26,7 +27,7 @@ const reviewsSlider = new Swiper('.js-reviews-slider', {
 });
 
 const aboutSlider = new Swiper('.js-about-slider', {
-  modules: [Pagination, Autoplay, EffectFade],
+  modules: [Pagination, EffectFade],
   spaceBetween: 30,
   effect: 'fade',
   fadeEffect: {
@@ -34,20 +35,16 @@ const aboutSlider = new Swiper('.js-about-slider', {
   },
   speed: 1000,
   allowTouchMove: false,
-  autoplay: {
-    delay: 3000,
-    pauseOnMouseEnter: true,
-    waitForTransition: false,
-  },
   pagination: {
     el: '.about-slider-pagination',
     clickable: true,
     renderBullet: function (index, className) {
       const number = String(index + 1).padStart(2, 0);
       const aboutSliderSectionTitle = getAboutSliderSectionTitle(index);
+      const aboutSliderAdditionalClassName = getAboutSliderAdditionalClassName(index);
 
       return `
-      <div class="about-slider-pagination-item ${className}">
+      <div class="about-slider-pagination-item ${className} ${aboutSliderAdditionalClassName}">
         <p class="about-slider-pagination-item-number">${number}</p>
         <p class="about-slider-pagination-item-title">${aboutSliderSectionTitle}</p>
       </div>
@@ -55,3 +52,7 @@ const aboutSlider = new Swiper('.js-about-slider', {
     },
   },
 });
+
+const sliders = { reviewsSlider, aboutSlider };
+
+export default sliders;
