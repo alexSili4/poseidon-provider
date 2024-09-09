@@ -47,6 +47,7 @@ const aboutSlider = new Swiper('.js-about-slider', {
       <div class="about-slider-pagination-item ${className} ${aboutSliderAdditionalClassName}">
         <p class="about-slider-pagination-item-number">${number}</p>
         <p class="about-slider-pagination-item-title">${aboutSliderSectionTitle}</p>
+        <span class="about-slider-pagination-item-marker"></span>
       </div>
       `;
     },
