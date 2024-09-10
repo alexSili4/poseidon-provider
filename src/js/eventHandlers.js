@@ -1,18 +1,13 @@
 import refs from '/js/refs';
+import fetchContactsUsData from './fetchContactsUsData';
 
 refs.contactsUsForm.addEventListener('input', onContactsUsFormInput);
 refs.contactsUsForm.addEventListener('submit', onContactsUsFormSubmit);
 
 function onContactsUsFormSubmit(e) {
   e.preventDefault();
-  const contactsUsFormData = {};
 
-  const formData = new FormData(e.currentTarget);
-  formData.forEach((value, key) => {
-    contactsUsFormData[key] = value;
-  });
-
-  console.log(contactsUsFormData);
+  fetchContactsUsData(e.currentTarget);
 }
 
 function onContactsUsFormInput(e) {
