@@ -7,7 +7,7 @@ refs.contactsUsForm.addEventListener('submit', onContactsUsFormSubmit);
 function onContactsUsFormSubmit(e) {
   e.preventDefault();
 
-  fetchContactsUsData(e.currentTarget);
+  fetchContactsUsData(new FormData(e.currentTarget));
 }
 
 function onContactsUsFormInput(e) {
